@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CPU usage monitor</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!-- <div class="box">
+        <span class="label">CPU(%)</span>
+        <span id="cpu_usage">-</span>
+      </div>
+      <div class="box">
+        <span class="label">Free Memory(%)</span>
+        <span id="memory_usage">-</span>
+      </div>
+      <div class="box">
+        <span class="label">Total Memory(GB)</span>
+        <span id="total_mem">-</span>
+      </div> -->
+      <div class="box">
+        <span>Office Notification System</span>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="./src/asset/images/break.gif" />
+          <img src="./src//asset/images/breakit.gif" />
+        </div>
+        <div class="column">
+          <!-- <img src="./src/asset/images/drink.gif" /> -->
+          <img src="./src/asset/images/stand.gif" />
+          <img src="./src/asset/images/exercise.gif" />
+        </div>
+      </div>
+    </div>
+    <script src="./src/component/notify.js"></script>
+    <div class="row">
+      <div class="column">
+        <button type="button" onclick="fireNotification()">Click here</button>
+      </div>
+    </div>
+  </body>
+</html>

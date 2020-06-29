@@ -1,0 +1,40 @@
+{
+  "name": "sample-application",
+  "productName": "CPU analyser",
+  "version": "1.0.0",
+  "description": "An application to check CPU Usage",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build-installer": "electron-builder",
+    "pack": "build --dir",
+    "dist": "npm run build && build"
+  },
+  "build": {
+    "appId": "sample-application",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./src/icon.png"
+    },
+    "nsis": {
+      "installerIcon": "./src/icon.png"
+    },
+    "mac": {
+      "category": "",
+      "target": "dmg",
+      "icon": "./src/icon.png"
+    }
+  },
+  "author": "Navita Singhal",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.0.5"
+  },
+  "dependencies": {
+    "os-utils": "0.0.14",
+    "react": "^16.13.1"
+  }
+}
