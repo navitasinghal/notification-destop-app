@@ -31,7 +31,7 @@
   "author": "Navita Singhal",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^9.0.5"
+    "electron": "^11.5.0"
   },
   "dependencies": {
     "os-utils": "0.0.14",
